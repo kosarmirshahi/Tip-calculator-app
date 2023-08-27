@@ -1,3 +1,23 @@
 body {
   background-color: hsl(185, 41%, 84%);
 }
+.container {
+  width: 65%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 7rem;
+}
+.leftSection {
+  width: 50%;
+}
+.rightSection {
+  width: 50%;
+  height: 100%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+}
