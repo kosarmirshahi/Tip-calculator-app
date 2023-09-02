@@ -14,18 +14,29 @@
     <div class="container">
       <div class="leftSection">
         <label class="labelStyle">Bill</label>
-        <input type="text" placeholder="0" class="inputeStyle" />
+        <input
+          type="text"
+          placeholder="0"
+          class="inputeStyle"
+          id="billAmount"
+        />
         <label class="labelStyle">Select Tip %</label>
         <div class="buttonContainer">
-          <button class="tipButton">5%</button>
-          <button class="tipButton" class="tipButton">10%</button>
-          <button class="tipButton">15%</button>
-          <button class="tipButton">25%</button>
-          <button class="tipButton">50%</button>
-          <input class="customInput" placeholder="Custom" type="text" />
+          <button class="tipButton" id="persent1" value="5">5%</button>
+          <button class="tipButton" id="persent2" value="10">10%</button>
+          <button class="tipButton" id="persent3" value="15">15%</button>
+          <button class="tipButton" id="persent4" value="25">25%</button>
+          <button class="tipButton" id="persent5" value="50">50%</button>
+          <button class="tipButton" id="persent6" value="75">75%</button>
+          <!-- <input class="customInput" placeholder="Custom" type="text" /> -->
         </div>
         <label class="labelStyle">Number Of People</label>
-        <input type="text" placeholder="0" class="inputeStyle" />
+        <input
+          type="text"
+          placeholder="0"
+          class="inputeStyle"
+          id="peopleAmount"
+        />
       </div>
       <div class="rightSection">
         <div class="topRightSection">
@@ -35,7 +46,7 @@
               <p id="person">/person</p>
             </div>
             <div>
-              <p id="dollar">$0.00</p>
+              <p id="dollar" class="tipAmountValue"><span>$</span>0</p>
             </div>
           </div>
           <div class="tipAmount">
@@ -44,14 +55,15 @@
               <p id="person">/person</p>
             </div>
             <div>
-              <p id="dollar">$0.00</p>
+              <p id="dollar" class="total"><span>$</span>0</p>
             </div>
           </div>
         </div>
         <div class="bottomRightSection">
-          <button class="resetButton">RESET</button>
+          <button class="resetButton">Calcute</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
